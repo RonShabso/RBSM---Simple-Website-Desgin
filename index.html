@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>RBSM Moving</title>
+    <link rel="stylesheet" type="text/css" href="StyleSheet1.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script>
+        function alarm() {
+            setInterval(function () { alert("Dont Miss Out On Our 50% Sale!"); }, 50000);
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img src="pics/lotran.png" />
+            </div>
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="indexservices.html">Services</a></li>
+                <li><a href="indexcontact.html">Contact</a></li>
+                <li><a href="indexgallery.html">Gallery</a></li>
+            </ul>
+        </div>
+        <div class="title">
+            <h1>RBSM Company Enterprise.</h1>
+        </div>
+
+        <div class="bottons">
+            <a href="https://www.youtube.com/watch?v=F6FxqK0qP5M" target="_blank" class="btn" onclick="alarm()">Watch Video</a>
+            <a href="https://www.facebook.com/profile.php?id=100041543498691" target="_blank" class="btn">Learn More About Our Moving Methods</a>
+        </div>
+
+
+    </header>
+
+    <div class="parag">
+        <p class="text">
+            <h1 class="h1cof">RBSM Moving Enterprise.</h1>
+            <br>
+            Sure, we might know Enterprise best from our<br> vacation car rentals, but their moving division,<br>
+            Enterprise Trucks, is a good shout for<br> a move—especially one across town. If you’re just moving <br>
+            across a city and don’t mind making a few trips back and forth (or you don’t have much stuff),<br>
+            looking into renting one of its larger vehicles<br> can save a ton of money. Enterprise, unlike other<br>
+            companies, really only does round-trip movies,<br> so if you’re going across the country, it’s likely<br>
+            not going to be the right pick for you.<br>
+        </p>
+
+    </div>
+
+    <div class="parag2">
+        <p class="text2">
+            <h1 class="h1-2">What Is RBSM Moving?.</h1>
+            Contract roasting, Coffee blend development, Contract powder blending, beverage blend<br /> development, Private label products, Custom packaging and branding design,<br />
+            Quality controlled process.<br />
+            Regardless of your market focus we can quickly work with you to identify and develop a<br /> targeted range of beverages and all of the necessary elements needed to meet your <br />
+            objectives and optimise your profitability. After decades of producing custom coffee products,<br /> our coffee blend catalogue has grown to offer a wide<br />
+            range of crafted flavours to suite the various applications. This is just one of the ways that<br /> we work to reduce the complexity in developing your new product.<br />
+            It takes years of training to become an expert roaster with the ability to “read” the beans and<br /> make decisions with split-second timing. The difference between perfectly roasted<br />
+            coffee and a ruined batch can be a matter of seconds.<br />
+
+        </p>
+
+    </div>
+
+    <div class="paragr3">
+        <style>
+            .paragr3 {
+                background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(pics/Gallery/nature.png);
+                text-decoration: none;
+                font-size: 200%;
+                line-height: 50px;
+                color: #fff;
+                height: 115vh;
+                background-size: cover;
+                background-position: center;
+                text-align: center;
+                font-family: Calibri;
+            }
+            .text33 {
+                padding: 60px;
+                margin-left: 10%;
+            }
+             .divStyled{
+                 display:table-cell;
+                 border:5px solid white;
+                 padding:40px;
+                 text-align:center;
+                 border-radius:5px;
+                 transition:0.5s;
+                 background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+             }
+             .botts{
+                border-radius:20px;
+                border:1px solid orange;
+                padding:10px 20px;
+                color:#fff;
+                text-decoration:none;
+                transition:0.5s ease;
+                background:none;
+             }
+             .botts:hover{
+                     background-color:orange;
+                     color:black;
+             }
+ 
+             .divStyled:hover{
+                 font-size:110%;
+                 transition:0.5s;
+             }
+             
+}
+        </style>
+        <p class="text33">
+            <h1 class="h1-2">Where RBSM Is Available At?</h1>
+            <center>
+                <div class="divStyled">
+                    <div name="Haifa">
+                    <p id="green">Haifa</p>
+                    <div name="Karmiel" ><br />
+                                         <p id="green2">Karmiel</p>
+                        <div name="Zefat"><br />
+                                          <p id="green3">Zefat</p>
+                         <div name="bott"><br />
+                             <input class="botts" onclick="Butt()" type="button" value="Click Here To Check If Available" />
+                         </div></div>
+                    </div>
+                </div>
+            </div>
+            </center>
+            <script type="text/javascript">
+                var divs = document.getElementsByName("Haifa");
+                var kar = document.getElementsByName("Karmiel");
+                var ze = document.getElementsByName("Zefat");
+
+                for(var i = 0; i < divs.length; i++)
+                {
+                    divs[i].addEventListener("click", clicks, false);
+                    kar[i].addEventListener("click", clicks, false);
+                    ze[i].addEventListener("click", clicks, false);
+                }
+
+
+                function clicks()
+                {
+                    alert(this.getAttribute("name") + " Is Available At The Moment!");
+                    
+                }
+                function Butt() {
+                    var x = document.getElementById("green");
+                    x.style.color = "green";
+                    x = document.getElementById("green2");
+                    x.style.color = "green";
+                    x = document.getElementById("green3");
+                    x.style.color = "green";
+                }
+            </script>
+        </p>
+
+    </div>
+            <p id="Paragraph">
+                <br />
+                <br />
+                <center>
+                    <h1 class="check">Visit Us!</h1>
+                    <button type="button" value="Click" onclick="myList()">Click To Check</button>
+                </center>
+                <script>
+                    function myList() {
+                        var list = ['Karmiel', 'Haifa', 'Zefat', 'Eilat'];
+                        for (var i = 0; i < list.length; i++) {
+                            alert('The Places We Work In Are ' + list[i] + '...Make Sure You Keep Track!')
+                        };
+                    }
+                </script>
+
+                <br />
+                <br />
+                <br />
+                <script>
+                    const Place = {
+                        Eilat: 'Eilat',
+                        Zefat: 'Zefat',
+                        Karmiel: 'Karmiel'
+                    };
+
+
+                    const Truck = {
+                        Service: 'Eliot007',
+                        Capacity: '200kg',
+                        Carrier: 'AirFilters'
+                    };
+                    const Services = {
+                        scale1: 'Car',
+                        scale2: 'Large Van',
+                        scale3: 'Small Van'
+                    };
+
+
+                    class Service {
+                        _timeInHours;
+                        _KM;
+                        _destination;
+                        constructor(timeInHours, KM, destination) {
+                            this._timeInHours = timeInHours;
+                            this._KM = KM;
+                            this._destination = destination;
+                        }
+                        tostring() {
+                            return this._timeInHours + " " + this._KM + " " + this._destination + " " ;
+                        }
+                    }
+                    Truck1 = new Service(5, 5000, Services.scale1, Truck.Service, Place.Eilat);
+
+                    Truck2 = new Service(3, 1500, Services.scale2, Truck.Capacity, Place.Karmiel);
+
+                    Truck3 = new Service(8, 1200, Services.scale3, Truck.Carrier, Place.Karmiel);
+
+                    document.getElementById("Paragraph").innerHTML = Truck1.tostring() + "<br>" + Truck2.tostring() + "<br>" + Truck3.tostring();
+                </script>
+            </p>
+
+
+
+
+
+</body>
+</html>

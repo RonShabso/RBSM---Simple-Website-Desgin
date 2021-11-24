@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>RBSM Moving</title>
+    <link rel="stylesheet" type="text/css" href="StyleSheet1.css" />
+    <style>
+        header {
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(pics/servicesind.jpg);
+            height:70vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .title {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .h1ab {
+
+            font-size: 500%;
+            color: #ffff;
+        
+        }
+        
+
+        .parag {
+            background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(pics/services.jpg);
+            background-size: cover;
+            background-position:unset;
+            text-align: center;
+            text-decoration: none;
+            font-size: 120%;
+            line-height: 35px;
+            height: 90vh;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img src="pics/lotran.png" />
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="indexservices.html">Services</a></li>
+                <li><a href="indexcontact.html">Contact</a></li>
+                <li class="active"><a href="indexgallery.html">Gallery</a></li>
+            </ul>
+        </div>
+        <div class="title">
+            <h1>Gallery.</h1>
+        </div>
+
+
+
+    </header>
+
+    <div class="parag"><br /><br />
+            <h1 class="h1ab">Take A Closer Look...</h1>
+
+            <style>
+                .gallery {
+                    margin: 100px 50px;
+                    float:left;
+                    margin-left:20%;
+                }
+
+                .gallery img {
+                    border-radius:15px;
+                    filter: grayscale(100%);
+                    transition: 1s;
+                    width:230px;
+                    padding:10px;
+                 }
+
+                .gallery img:hover{
+                    filter: grayscale(0%);
+                    transform:scale(1.2);
+                }
+            </style>
+            <div class="gallery">
+                <a href="pics/gallery/1.jpg"><img src="pics/gallery/1.jpg" /></a>
+                <a href="pics/gallery/2.jpg"><img src="pics/gallery/2.jpg" /></a>
+                <a href="pics/gallery/3.jpg"><img src="pics/gallery/3.jpg" /></a>
+                <a href="pics/gallery/4.jpg"><img src="pics/gallery/4.jpg" /><br /></a>
+                <a href="pics/gallery/5.jpg"><img src="pics/gallery/5.jpg" /></a>
+                <a href="pics/gallery/6.jpg"><img src="pics/gallery/6.jpg" /></a>
+                <a href="pics/gallery/7.jpg"><img src="pics/gallery/7.jpg" /></a>
+                <a href="pics/gallery/8.jpg"><img src="pics/gallery/8.jpg" /></a>
+            </div>
+    </div>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,251 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>RBSM Moving</title>
+    <link rel="stylesheet" type="text/css" href="StyleSheet1.css" />
+    <style>
+        header {
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(pics/truck2.jpg);
+            height: 70vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .title {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .h1ab {
+            margin-top: -5%;
+            font-size: 500%;
+        }
+
+        .about {
+            text-align: center;
+            margin: 5%;
+        }
+    </style>
+
+    <script>
+        function checkforblank() {
+
+            var errormessage = "";
+
+            if (document.getElementById('ffname').value == "") {
+                errormessage += "Please Enter Your first Name \n"
+                document.getElementById('ffname').style.border = "1px solid red";
+            }
+            if (document.getElementById('llname').value == "") {
+                errormessage += "Please Enter Your Last Name \n"
+                document.getElementById('llname').style.border = "1px solid red";
+            }
+            if (document.getElementById('email').value == "") {
+                errormessage += "Please Enter Your Email Address \n"
+                document.getElementById('email').style.border = "1px solid red";
+            }
+            if (document.getElementById('phone').value == "") {
+                errormessage += "Please Enter Your Phone Number \n"
+                document.getElementById('phone').style.border = "1px solid red";
+            }
+            if (document.getElementById('cntry').value == "") {
+                errormessage += "Please Select Your Country \n"
+                document.getElementById('cntry').style.border = "1px solid red";
+            }
+            if (errormessage != "") {
+                alert(errormessage);
+                return false;
+            }
+        }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img src="pics/lotran.png" />
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="indexservices.html">Services</a></li>
+                <li class="active"><a href="indexcontact.html">Contact</a></li>
+                <li><a href="indexgallery.html">Gallery</a></li>
+            </ul>
+        </div>
+        <div class="title">
+            <h1>Contact Us.</h1>
+        </div>
+
+
+
+    </header>
+
+    <div class="parag">
+        <p class="text">
+            <h1 class="h1ab">Contact</h1>
+        </p>
+    </div>
+    <p class="about">
+        Please send us your feedback!<br> Its super important for us to hear y'all
+    </p>
+
+<p>
+ <style>
+
+
+     .contact{
+         border-radius:200px;
+         text-align:center;
+         background-color: #FAF5EA;
+         padding:20px;
+     }
+
+     .cntc{
+         width:400px;
+         padding:20px;
+         border:1px;
+         border-radius:10px;
+         margin-top:1px;
+         margin-bottom:25px;
+     }
+
+     .sub{
+         border:none;
+         border-radius:20px;
+         padding:20px 20px;
+         cursor:pointer;
+         background-color:orange;
+         color:white;
+         font-size:20px;
+     }
+
+     .sub:hover{
+         background-color:grey;
+         transition:ease 0.5s;
+     }
+
+     .contact h1{
+         font-size:35px;
+         font-family:'Courier';
+         color:#FFCD60;
+        
+     }
+
+     .cntry{
+         width:200px;
+         padding:20px;
+         border:1px solid orange;
+         border-radius:10px;
+         margin-top:10px;
+         margin-bottom:25px;
+         cursor:pointer
+     }
+
+ </style>
+
+
+    <form class="contact" name="contact" method="get" onsubmit="return checkforblank()"  action="mailto:ronshabs@gmail.com">
+
+        <label for="fname"><h1>First name:</h1></label><br>
+        <input class="cntc" type="text" id="ffname" name="fname" placeholder="First Name"><br>
+
+        <h1>Last name:</h1><br>
+        <input class="cntc" type="text" id="llname" name="lastname" placeholder="Last Name"><br>
+
+        <h1>Email:</h1><br>
+        <input class="cntc" type="text" id="email" name="Email" placeholder="Email"><br>
+
+        <h1>Country:</h1><br>
+        <select id="cntry" class="cntry" name="selectcountry">
+            <option value=""></option>
+            <option value="israel">Israel</option>
+            <option value="austrelia">austrelia</option>
+            <option value="germany">germany</option>
+            <option value="amsterdam">amsterdam</option>
+            <option value="USA">USA</option>
+            <option value="china">china</option>
+        </select> <br>
+
+        <h1>Phone Number:</h1> <br>
+        <input class="cntc" type="text" id="phone" name="phone" placeholder="Phone Number"><br />
+
+        <h1>Gender:</h1> <br />
+        <input class="rad" type="radio" name="sex" /> Male <br />
+        <input class="rad" type="radio" name="sex" />Female <br />
+
+        <h1>Subject:</h1> <br />
+        <input class="cntc" type="text" name="subject" placeholder="Write Something About You..." style="height:200px; width:700px;" /> <br />
+
+
+
+        <input class="sub" type="submit" value="Submit"> <input class="sub" type="reset" value="Reset">
+    
+    
+    </form>
+
+ 
+</p>
+<p>
+    <style>
+        .app {
+            text-align:center;
+            font-size:50px;
+            color : grey;
+        }
+        .tempo{
+            color:grey;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size:20px;
+        }
+        .tempo input{
+            width:100px;
+            height:30px;
+            border:none;
+            background-color:lavenderblush;
+            border-radius:5px;
+            text-align:center;
+        }
+            
+    </style>
+    <h1 class="app">Write Down Your name!</h1>
+    <center>
+    <div class="tempo" ng-app="myApp" ng-controller="personCtrl">
+                <br /><br />
+        First Name <input type="text" ng-model="firstName" /><br />
+        Last Name <input type="text" ng-model="lastName" /><br /><br /><br />
+        Full Name : {{fullName()}}
+    </div>
+    </center>
+        <script>
+            var app = angular.module('myApp', []);
+            app.controller('personCtrl', function ($scope) {
+                $scope.firstName = "Yuri";
+                $scope.lastName = "Gargarin";
+                $scope.fullName = function () {
+                    return $scope.firstName + " " + $scope.lastName;
+                };
+
+            });
+                
+        </script>
+
+</p>
+
+
+
+
+    
+
+
+
+
+
+
+</body>
+</html>

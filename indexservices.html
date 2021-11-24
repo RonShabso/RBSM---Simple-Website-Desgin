@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>RBSM Moving</title>
+    <link rel="stylesheet" type="text/css" href="StyleSheet1.css" />
+    <style>
+        header {
+            background-image:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(pics/services.jpg);
+            height: 70vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .title {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .h1ab {
+            
+            font-size: 500%;
+            color:#ffff;
+
+        }
+
+        .about {
+            text-align: center;  linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(pics/servicesind.jpg);
+            margin: 5%;
+        }
+         .parag {
+             background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(pics/servicesind.jpg);
+             background-size:cover;
+             background-position:unset;
+             text-align: center;
+             text-decoration: none;
+             font-size: 120%;
+             line-height:35px;
+             height:60vh;
+    }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img src="pics/lotran.png" />
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="indexservices.html">Services</a></li>
+                <li><a href="indexcontact.html">Contact</a></li>
+                <li><a href="indexgallery.html">Gallery</a></li>
+            </ul>
+        </div>
+        <div class="title">
+            <h1>Our Services.</h1>
+        </div>
+
+
+
+    </header>
+
+    <div class="parag">
+        <br /><br />
+
+        <h1 class="h1ab">reach Us</h1><br />
+
+            <style>
+                .middle{
+                    margin-top:80px;
+                }
+
+                .middle img {
+                    width:60px;
+                    margin:25px;
+                    filter: grayscale(100%);
+                    transition:0.5s;
+                }
+
+                .middle img:hover{
+                    filter: grayscale(0%);
+                    transition:0.5s;
+                    transform:scale(1.3);
+                }
+            </style>
+            <div class="middle">
+                <a href="mailto:ronshabso@gmail.com"><img src="bottons/email.png" /></a>
+                <a href="#"><img src="bottons/phone.png" /></a>
+                <a href="https://www.facebook.com/profile.php?id=100041543498691" target="_blank"><img src="bottons/facebook.png" /></a>
+                <a href="#"><img src="bottons/instagram.png" /></a>
+            </div>
+
+    </div>
+
+    <p id="paraggg">
+        <style>
+            .forr{
+                text-align:center;
+                color:greenyellow;
+                line-height:50px;
+            }
+
+            .ppheader{
+                text-align:center;
+                font-size:50px;
+                padding:20px;
+            }
+        </style>
+        <h1 class="ppheader">Our Collection Of Trucks</h1>
+        <div id="PPP" class="forr">
+            <script>
+                 var Trucks = ["Volvo", "Man", "Scania", "Mercedes Benz", "Fiat", "Toyota"];
+                 var value = " ";
+
+                 for (var i = 0; i < Trucks.length; i++) {
+                 value += Trucks[i] + "<br>";
+                 }
+                 document.getElementById("PPP").innerHTML = value;
+            </script>
+        </div>
+    </p>
+
+
+</body>
+</html>
